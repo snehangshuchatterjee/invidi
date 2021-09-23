@@ -1,0 +1,24 @@
+{
+  "name": "poll-app-backend",
+  "version": "1.0.0",
+  "description": "the backend application to provide details for the poll app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/sneh17/poll-app.git"
+  },
+  "keywords": [
+    "poll",
+    "invidi",
+    "sneh"
+  ],
+  "author": "chatterjeesneh@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/sneh17/poll-app/issues"
+  },
+  "homepage": "https://gitlab.com/sneh17/poll-app#readme"
+}
