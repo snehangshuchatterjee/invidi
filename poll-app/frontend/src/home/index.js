@@ -1,17 +1,8 @@
 import React from "react";
-import { connect } from 'react-redux';
 
 import Polls from "../polls";
 
-const mapStateToProps = (state) => {
-    return ({
-        userOpinion: state.pollsReducer.userOpinion
-    });
-}
-
-const Home = (props) => {
-    const { userOpinion } = props;
-
+const Home = () => {
     return (
         <div>
             <Polls />
@@ -19,4 +10,4 @@ const Home = (props) => {
     );
 }
 
-export default connect(mapStateToProps)(Home);
+export default Home;

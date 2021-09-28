@@ -7,7 +7,10 @@
     "startClient": "cd frontend && yarn start",
     "startServer": "cd backend && npm start",
     "start": "concurrently \"npm run startServer\" \"npm run startClient\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "installFrontendDependencies": "cd frontend && yarn",
+    "installBackendDependencies": "cd backend && npm install",
+    "installDependencies": "npm run installBackendDependencies && npm run installFrontendDependencies",
+    "test": "cd frontend && yarn run test"
   },
   "repository": {
     "type": "git",
