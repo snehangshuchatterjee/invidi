@@ -5,7 +5,7 @@ import { getAllPollCategories, getAllPollsforASport } from "../controllers/pollC
 
 const pollRoutes = Router();
 
-pollRoutes.get("/getCategories", asyncMiddleware(getAllPollCategories));
-pollRoutes.get("/getPolls", asyncMiddleware(getAllPollsforASport));
+pollRoutes.get("/categories", asyncMiddleware(getAllPollCategories));
+pollRoutes.get("/details", asyncMiddleware(getAllPollsforASport));
 
 export default pollRoutes;

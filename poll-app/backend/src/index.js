@@ -1,8 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
+import cors from "cors";
 import { connectToMongooseDB } from "./utils/mongooseConnection";
-import { asyncMiddleware } from "./middlewares/asyncMiddleware";
-import { castAVote } from "./controllers/votingController";
 
 import pollRoutes from "./routes/pollRoutes";
 import votingRoutes from "./routes/votingRoutes";
@@ -13,6 +12,7 @@ const PORT = process.env.PORT || 4200;
 connectToMongooseDB();
 
 app.use(bodyParser.json());
+app.use(cors());
 
 app.use("/polls", pollRoutes);
 app.use("/voting", votingRoutes)

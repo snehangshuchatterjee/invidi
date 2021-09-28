@@ -8,8 +8,6 @@ export const castAVote = async (req, res) => {
 
     const result = await newVotingItem.save();
 
-    console.log(result);
-
     res.status(200);
     res.send("Data Saved Successfully")
 }
